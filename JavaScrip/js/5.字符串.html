@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	'use strict';
+	console.log('abc');
+	console.log("abc");
+	
+	//转义字符
+	console.log('\'');
+	console.log('\n');
+	console.log('\t');
+	
+	//Unicode 字符
+	console.log('\u4e2d');
+	console.log('\n####');
+	
+	//Ascll字符
+	console.log('\x41');//A
+	
+	//多行字符串编写
+	var msg = `hello
+	world
+	hello
+	this 
+	fucking 
+	world
+	`
+	console.log(msg);
+	
+	// 模板字符串
+	var name = "Leo";
+	var age = 22;
+	var msg2 = `Hello, my name is ${name}. I\'m ${age} years old `;
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

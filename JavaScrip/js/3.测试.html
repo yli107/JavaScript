@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+		//精度测试，应避免使用浮点数进行运算
+		console.log((1/3) === (1-2/3));//false
+		console.log(Math.abs(1/3-(1-2/3))<0.00000001);//true
+		
+		//数组 可以为不同类型
+		var arr = [1, 2, 3, 1.5, 'hello', null, true];
+		
+		new Array(1, 2, 3, 1.5, 'hello', null, true);
+		
+		// 超过index界限会返回undefined
+		
+		//对象 使用大括号定义 
+		//使用逗号隔离元素
+		var person = {
+				name: "Leo",
+				age: 22,
+				tags:['NC','LG','HZ']
+		}
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

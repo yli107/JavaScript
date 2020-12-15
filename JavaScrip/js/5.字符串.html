@@ -36,6 +36,26 @@
 	var age = 22;
 	var msg2 = `Hello, my name is ${name}. I\'m ${age} years old `;
 	
+	console.log(msg2);
+	
+	//字符串长度
+	var length = name.length
+	console.log(`lenght of name is ${length}`);
+	
+	//字符串的可 变性，不可变
+	var student = "student";
+	console.log(student.length);
+	console.log(student[0]);
+	//student[0] = 1; 会报错
+	console.log(student);//输出还是student
+	
+	//用方法大小写转换
+	console.log(student.toUpperCase());
+	console.log(student.toLowerCase());
+	
+	//indexOf, substring
+	console.log(student.indexOf('t'));
+	console.log(student.substring(0,3));
 </script>
 
 </head>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var arr = [ 1, 2, 3, 4, 5 ];
+	console.log(arr.length);
+
+	//扩大数组长度
+	arr.length = 10;
+	console.log(arr.length);
+	console.log(arr);
+	console.log(arr[7]);//新增为undefined
+
+	//减小数组长度，元素丢失
+	arr.length = 3;
+	console.log(arr.length);
+	console.log(arr);
+
+	//获得index
+	console.log(arr.indexOf(1));
+	console.log(arr.indexOf(4));//元素不存在，返回-1
+
+	// slice() 截取Array的一部分，返回一个新数组
+	// 类似于substring
+	var arrx = [ 3, 1, 4, 1, 5, 9, 2, 6 ];
+	var subarrx = arrx.slice(0, 3);
+	console.log(arrx);
+	console.log(subarrx);
+
+	//push(x), pop() 尾部加减
+	console.log(arrx.push(5, 3, 5));//在尾部添加元素并返回数组新的的长度
+	console.log(arrx);
+	console.log(arrx.pop());//删除并返回最后一个元素
+	console.log(arrx);
+
+	// unshift(x), shift() 头部加减
+	console.log(arrx.unshift(3, 3));//在头部添加元素并返回数组新的的长度
+	console.log(arrx);
+	console.log(arrx.shift());//删除并返回第一个元素
+	console.log(arrx);
+
+	// sort() 排序, reverse()反转
+	var arrs = [ 'c', 'd', 'g', 'k', 'z', 'r', 'a', 'c', 'g' ];
+	console.log(arrs);
+	arrs.sort();
+	console.log(arrs);
+	arrs.reverse();
+	console.log(arrs);
+</script>
+</head>
+<body>
+
+</body>
+</html>

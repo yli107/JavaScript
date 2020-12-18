@@ -10,14 +10,20 @@
 	var age = [2,3,5,7,2,6,9,4,18];
 
 	// for each 语句
-	for( var index in age ){
+	for( let index in age ){
 		console.log(age[index]); 
 	}
+	
+	for( let x of age){
+		console.log(x);
+	}
+	
 	
 	// for each 函数
 	age.forEach(function (value) {
 		console.log(value);
 	})
+	
 
 </script>
 </head>

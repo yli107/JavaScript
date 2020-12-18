@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	'use strict';
+
+	function abs(x) {
+		if (x < 0) {
+			return -x;
+		}
+		return x;
+	}
+
+	var nothing = function(x) {
+		if (x == 0) {
+			return 0;
+		}
+	}//没有return 返回undefined
+	
+	console.log(abs(10));  // 10
+	console.log(nothing()) // 没有参数 返回undefined
+	console.log(nothing(1))//返回undefined
+	
+	// 手动定义异常
+	function num(x){
+		if ( typeof x != 'number'){
+			throw 'Not a Number';
+		}
+		return x;
+	}
+	num('str');
+	
+	//arguments 
+	function args(x){
+		var p = '';
+		if (arguments.length > 1){
+			for(var n of arguments){
+				p = p + n + ',';
+			}
+			return arguments.length + " arguments: "+ p.substring(0, p.length - 1);
+		}else{
+			return "1 argument:" + x;
+		}
+	}
+	
+	function re(x,y,...rest){
+		var p = "The args are " + x + ", " + y;
+		if (rest.length == 0)
+			return p;
+		console.log(typeof rest);
+		return p + "\nThe rest are " + rest;
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

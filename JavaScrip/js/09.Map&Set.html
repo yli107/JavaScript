@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	'use strict';
+
+	var map = new Map([ [ 1, "Leonardo" ], [ 2, "Rahpel" ],
+			[ 3, "Michaelgelo" ], [ 4, "Donartelo" ] ]);
+	console.log(map.get(1));
+	console.log(map.get(2));
+	console.log(map.get(3));
+	console.log(map.get(4));
+
+	map.set(1, "Snaplin");
+	console.log(map.get(1));
+	map.set(5, "Shreder");
+	console.log(map.get(5));
+	
+	
+	var ret1 = map.delete(2);
+	console.log(ret1); // 成功删除return true
+	
+	// set 去重
+	var set = new Set([5,2,1,1,1,1,1]);
+	console.log(set); //只有 [5,2,1]
+	var ret2 = set.delete(5); // 成功删除return true
+	console.log(ret2); 
+	var ret3 =set.add(7);
+	console.log(ret3);
+	
+	
+	// has
+	console.log("map.has(1): " + map.has(1));
+	console.log("map.has(7): " + map.has(7));
+	console.log("set.has(1): " + set.has(1));
+	console.log("set.has(5): " + set.has(5));
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

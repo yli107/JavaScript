@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	'use strict';
+	//对象定义
+	var person = {
+		name : "Leo",
+		age : 22,
+		email : "yibinleo@foxmail.com",
+		score : 99
+	}
+
+	//对象的删减属性
+	console.log(delete person.email);//删除成功返回true
+	console.log(person.email);//undefined
+
+	//对象属性添加
+	person.gf = "Ming";//直接添加
+	console.log(person.gf);
+
+	//判断属性是否在对象中 in
+	//对象的所有属性都是字符串
+	console.log("name in person: ");
+	console.log('name' in person);
+	console.log("money in person: ")
+	console.log('money' in person);
+	console.log('toString in person: ');
+	console.log('toString' in person);
+
+	//判断一个属性是否是这个对象自身拥有的
+	//hasOwnProperty()
+	console.log('Person hasOwnProperty: toString: '
+			+ person.hasOwnProperty("toString"));//return false
+	console.log('Person hasOwnProperty: age: ' + person.hasOwnProperty("age")); //return true
+</script>
+</head>
+<body>
+
+</body>
+</html>

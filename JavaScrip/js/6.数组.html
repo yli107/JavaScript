@@ -48,6 +48,27 @@
 	console.log(arrs);
 	arrs.reverse();
 	console.log(arrs);
+
+	// concat() 返回新的数组，但不修改原数组
+	var arrfirst = [ "A", "B", "C" ];
+	console.log("arrfirst: " + arrfirst);
+	var arrcon = arrfirst.concat([ 1, 2, 3 ]);
+	console.log("arrcon: " + arrcon);
+	console.log("arrfirst: " + arrfirst);
+
+	//连接符 join(), 返回一个字符串
+	var arrjoin = [ "L", "E", "O" ];
+	console.log(arrjoin.join('-'));
+
+	//多维数组
+	var arr2dim = [ [ 1, 2 ], [ "a", "b" ], [ true, 'C' ] ];
+	console.log(arr2dim);
+
+	//自动填充
+	arr2dim.fill(1);
+	console.log("arr2dim.fill(1): " + arr2dim);
+	arr2dim.fill([ 1, 2, 3 ]);
+	console.log("arr2dim.fill([1, 2, 3]): " + arr2dim);
 </script>
 </head>
 <body>

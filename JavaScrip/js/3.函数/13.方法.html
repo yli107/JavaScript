@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	//直接在变量里定义方法
+	var leoli = {
+		name : 'Leo',
+		birth : 1998,
+		age : function() {
+			let now = new Date().getFullYear();
+			return now - this.birth;
+		}
+	}
+	
+	//或者先定义方法再使用
+	function getAge() {
+		let now = new Date().getFullYear();
+		return now - this.birth;
+	}
+
+	var bruceWayen = {
+		name : "Bruce",
+		birth : 1970,
+		age : getAge
+	}
+	
+	// 用apply()反向调用函数，将this作为一个参数
+	var leoAge = getAge.apply(leoli,[]);//this为leoli，参数为[]
+	//或者
+	var noParam = getAge.apply(bruceWayen)//this为bruceWayen,参数没有则不写
+	console.log(leoAge);
+	console.log(noParam);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

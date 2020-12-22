@@ -4,7 +4,22 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
+	var now = new Date();
+	console.log(now);
 	
+	var year = now.getFullYear();
+	var month = now.getMonth();// 0 ~ 11
+	var date = now.getDate();
+	var day = now.getDay();
+	var hour = now.getHours();
+	var minute = now.getMinutes();
+	var second = now.getSeconds();
+	
+	var time = now.getTime();//时间戳 从1970/1/1 0:00:00开始的毫秒数 
+	
+	console.log(new Date(time));
+	
+	console.log(now.toGMTString());
 </script>
 </head>
 <body>

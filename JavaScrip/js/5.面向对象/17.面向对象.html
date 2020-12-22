@@ -3,6 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+
+	var student = {
+			lastName: "Li",
+			firstName:"Leo",
+			birth:1998,
+			unityId:"yli107",
+			getAge: function(){
+				var now = new Date();
+				return now.getFullYear() - this.birth;
+			}
+	}
+	
+	var xiaoming = {
+			lastname:"Wang",
+			firstName:"xiaoming"
+	}
+	
+	//xiaoming的原型是student（类似于父类）
+	xiaoming.__proto__ = student;
+	
+</script>
 </head>
 <body>
 

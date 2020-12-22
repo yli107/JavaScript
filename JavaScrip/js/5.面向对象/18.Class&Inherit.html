@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	"use strict";
+	
+/* 	function Student(name){
+		this.name = name;
+	}
+	
+	Student.prototype.hello = function(){
+		alert('Hello')
+	} */
+	
+	//ES6之后
+	class Student{
+		constructor(name){
+			this.name = name;
+		}
+		
+		hello(){
+			alert('hello my name is ' + this.name);
+		}
+	}
+	
+	// 继承
+	class primaryStudent extends Student{
+		constructor(name,grade){
+			super(name);
+			this.grade = grade;
+		}
+		
+		myGrade(){
+			alert("My grade is " + this.grade);
+		}
+	}
+	
+	var xiaoming = new Student("Xiaoming");
+	var daming = new Student("Daming");
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

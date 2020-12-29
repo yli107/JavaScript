@@ -2,9 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>列表框</title>
 </head>
 <body>
+	<form action="01.FirstHTML.html" method="post">
+		<!-- 下拉框 select 
+		option 选项
+			value: 代表的值
+			selected: 默认选项
+	 -->
+		<br>选择国家： <select name="country">
+			<option value="CNA">中国</option>
+			<option value="USA" selected>美国</option>
+			<option value="ENG">英国</option>
+			<option value="SIG">新加坡</option>
+			<option value="Aus">澳大利亚</option>
+		</select>
 
+		<!-- 文本域 textarea
+	  -->
+		<p>
+			反馈：
+			<textarea name="textarea" rows="10" cols="30" maxlength= 100>文本内容</textarea>
+		</p>
+
+		<p>
+			邮箱：<input type="email" name="email">
+		</p>
+		<p>
+			URL：<input type="url" name="url">
+		</p>
+		<p>
+			数量：<input type="number" name="num" max=1000 min=0 step=5>
+		</p>
+
+		<!-- 滑块 -->
+		<p>
+			音量：<input type="range" name="volume" max=100 min=0 step=2>
+		</p>
+
+		<!-- 搜索框 -->
+		<p>
+			搜索：<input type="search" name = "search">
+		</p>
+		<p>
+			<input type="submit">
+	</form>
 </body>
 </html>

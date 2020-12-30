@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>层次选择器</title>
+<!-- 
+		1.后代选择器
+		2.子选择器
+		3.相邻兄弟选择器
+		4.通用选择器
+	 -->
+<style>
+/**后代选择器*/
+	body h1{
+	    background: red;
+	}
+/* 子选择器 一代*/
+ul>li {
+	background: rgb(30, 167, 196);
+}
+/** 兄弟选择器， 只有一个（向下）*/
+.active+h1{
+	background: rgb(128, 64, 0);
+}
+
+/** 通用选择器*/
+.alive~p{
+	background:yellow;
+}
+</style>
+</head>
+<body>
+	<h1>h1(1)</h1>
+	<h1 class="active">h1(2)</h1>
+	<h1>h1(3)</h1>
+	<h1>h1(4)</h1>
+	<h2>h2</h2>
+	
+
+	<p>p1</p>
+	<p>p2</p>
+	<p>p3</p>
+	<p class = "alive">p4</p>
+	<p>p5</p>
+	<p>p6</p>
+	<p>p7</p>
+	
+	<ul>
+		<li>美短</li>
+		<li>英短</li>
+		<li>狸花</li>
+		<li>无毛</li>
+		<li>布偶</li>
+		<li>橘猫</li>
+	</ul>
+
+</body>
+</html>

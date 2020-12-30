@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>属性选择器</title>
+<style>
+.demo a {
+	float: left;
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 10px;
+	background: orange;
+	color: black;
+	text-align: center;
+	margin-right: 5px;
+	font: bold 20px;
+}
+
+/*存在id属性的元素
+	a[]{}
+	= 完全等于
+	*= 包含
+	^= 以开头
+	$= 以结尾
+*/
+a[id] {
+	background: blue;
+}
+
+a[class*="active"] {
+	background: grey;
+}
+
+
+</style>
+</head>
+<body>
+	<p class="demo">
+		<a href="http://www.baidu.com" class="links item first" id="first">百度</a>
+		<a href="http://www.bilibili.com" class="links item active"
+			target="_blank" title="test">b站</a> 
+		<a href="01.id选择器.html" target="_blank">id选择器</a> 
+		<a href="02.标签选择器.html" target="_blank" id="last"> 标签选择器</a>
+	</p>
+</body>
+</html>

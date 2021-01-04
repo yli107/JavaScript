@@ -7,7 +7,7 @@
 	margin: 0px;
 }
 
-/* list-style:
+/* 表格的样式 list-style:
 		disc 默认标记实心圆
 		circle 标记空心圆
 		square 标记实心方块 
@@ -22,7 +22,6 @@
 		upper-latin 大写拉丁字母
 		hebrew 传统的希伯来编号方式
 		cjk-ideographic 中文数字
-		
 */
 ul>li {
 	height: 30px;
@@ -34,7 +33,7 @@ a{
 }
 
 a:link{
-	color:black;
+	color:grey;
 }
 
 a:visited{

@@ -1,0 +1,54 @@
+.title {
+	font-size: 25px;
+	font-weight: bold;
+	text-indent: 1em;
+	line-height: 35px;
+	background:orange;
+	margin: 0px;
+}
+
+/* list-style:
+		disc 默认标记实心圆
+		circle 标记空心圆
+		square 标记实心方块 
+		decimal 标记是数字
+		decimal-leading-zero 0开头的数字标记
+		lower-roman 小写罗马数字
+		upper-roman 大写罗马数字
+		lower-alpha 小写英文字母
+		upper-alpha 大写英文字母
+		lower-greek 小写希腊字母
+		lower-latin 小写拉丁字母
+		upper-latin 大写拉丁字母
+		hebrew 传统的希伯来编号方式
+		cjk-ideographic 中文数字
+		
+*/
+ul>li {
+	height: 30px;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link{
+	color:black;
+}
+
+a:visited{
+	color:black;
+}
+
+a:hover{
+	color:orange;
+	text-decoration:underline;
+}
+
+#table_left{
+	background: rgb(192, 192, 192);
+	width: 300px;
+	border-style: solid;
+	border-color: orange;
+}

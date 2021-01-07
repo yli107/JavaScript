@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><label for=""></label></title>
+    <style>
+        div[class *="link"] {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: pink;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+            position: relative;
+            left:30px;
+            top:40px;
+        }
+        .link_2 {
+            position: relative;
+            left: 95px;
+        }
+
+        .link_3 {
+            float: right;
+        }
+
+        .link_5 {
+            position: relative;
+            left: 100px;
+        }
+
+        div[class *="link"]:hover {
+            background-color: rgb(0, 140, 255);
+        }
+
+        #father {
+            border: red solid 2px;
+            height: 300px;
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="father">
+        <div id = "first_cloumn">
+            <div class="link_1">
+                <a href="#">链接1</a>
+            </div>
+
+            <div class="link_2">
+                <a href="#">链接2</a>
+            </div>
+        </div>
+
+        <div id = "second_column">
+            <div class="link_5">
+                <a href="#">链接5</a>
+            </div>
+        </div>
+
+        <div id = "third_column">
+            <div class="link_3">
+                <a href="#">链接3</a>
+            </div>
+
+            <div class="link_4">
+                <a href="#">链接4</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+
+</html>

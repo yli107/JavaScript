@@ -1,0 +1,32 @@
+#content {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: black solid 2px;
+    line-height: 25px;
+    width: 640px;
+}
+
+#content:ul {
+    position: relative;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.tipText {
+    position: absolute;
+    top: 344px;
+    z-index: 10;
+    color: black;
+}
+
+.tipBg {
+    width: 640px;
+    opacity: 0.5;
+    position: absolute;
+    background-color: white;
+    top: 344px;
+}

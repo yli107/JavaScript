@@ -24,25 +24,30 @@
 <script>
     var js = document.getElementById("js");
     var list = document.getElementById("list");
-
-    list.append(js);
+    var se = document.getElementById("se");
+    var ee = document.getElementById("ee");
+    var me = document.getElementById("me");
+    var body = document.getElementsByTagName('body');
 
     //创建新的节点
     var newP = document.createElement('p');//创建一个p标签
     newP.id = "newP";
     newP.innerText = "新标签";
-
-    list.append(newP);
+    list.appendChild(newP);
 
     //创建一个标签节点（通过setAttribute设置任何属性的值）
     var newH2 = document.createElement('h2');
     newH2.setAttribute('id', 'head2');
-    newH2.innerText = "新H2"
+    newH2.innerText = "新H2";
 
-    list.append(newH2);
+    list.appendChild(newH2);
 
     var body = document.getElementsByTagName("body")[0];
     body.setAttribute('style', 'background-color: cyan');
+    body.appendChild(js);//将现有节点加入
+
+    //insert
+    
 
 </script>
 

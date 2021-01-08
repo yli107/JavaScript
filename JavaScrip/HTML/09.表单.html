@@ -1,9 +1,11 @@
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>登录注册</title>
+	<meta charset="UTF-8">
+	<title>登录注册</title>
 </head>
+
 <body>
 	<h1>注册</h1>
 
@@ -13,37 +15,37 @@
 			post：比较安全，传输大文件
 	-->
 	<form action="01.FirstHTML.html" method="post">
-		
+
 		<!-- input
 			type = “text” 输入框
 			value：初始值
 			placeholder：默认提示
 			required: 必填
 		 -->
-		<p>用户名:<input type="text" name="username" value="请输入用户名" maxlength = 30 required></p>
+		<p>用户名:<input type="text" name="username" value="请输入用户名" maxlength=30 required></p>
 		<p>&nbsp;&nbsp;&nbsp;密码:<input type="password" name="pwd" required></p>
-		
+
 		<!-- 多选框标签 type = "checkbox"
 		 	checked: 默认选中
 		 -->
 		<p> 爱好：
-			<input type = "checkbox" name = "hobby" value = "code" checked>写代码
-			<input type = "checkbox" name = "hobby" value = "sleep">睡觉
-			<input type = "checkbox" name = "hobby" value = "game">游戏
-			<input type = "checkbox" name = "hobby" value = "sex">做爱
+			<input type="checkbox" name="hobby" value="code" checked>写代码
+			<input type="checkbox" name="hobby" value="sleep">睡觉
+			<input type="checkbox" name="hobby" value="game">游戏
+			<input type="checkbox" name="hobby" value="sex">做爱
 		</p>
-		
-		
+
+
 		<!-- 单选框标签 type ="radio"
 				name: 当name一样时分入同一个组
 				value: post的值
 		 -->
-		<p><input type = "radio" name = "sex" value = "male">男
-		   <input type = "radio" name = "sex" value = "female">女 
+		<p><input type="radio" name="sex" value="male">男
+			<input type="radio" name="sex" value="female">女
 		</p>
-		
+
 		<!-- 文件域 -->
-		<p><input type = "file" name = "file"></p>
+		<p><input type="file" name="file"></p>
 
 		<!-- 按钮 
 			type = "button" 普通按钮
@@ -53,12 +55,13 @@
 				value 为按钮赋值
 		 -->
 		<p>
-			按钮：<input type = "button" name = "btn1" value = "点击">
+			按钮：<input type="button" name="btn1" value="点击">
 		</p>
 		<p>
-		<input type="submit" name="Button" value = "发送信息">
-		<input type="reset"name="Reset" value = "清空信息">
+			<input type="submit" name="Button" value="发送信息">
+			<input type="reset" name="Reset" value="清空信息">
 		</p>
 	</form>
 </body>
+
 </html>

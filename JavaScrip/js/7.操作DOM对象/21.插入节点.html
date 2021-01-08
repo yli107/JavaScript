@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>插入节点</title>
+
+
+
+</head>
+
+<body>
+    <p id="js">JavaScript</p>
+    <div id="list">
+        <p id="se">JavaSE</p>
+        <p id="ee">JavaEE</p>
+        <p id="me">JavaME</p>
+    </div>
+
+
+
+</body>
+
+<script>
+    var js = document.getElementById("js");
+    var list = document.getElementById("list");
+
+    list.append(js);
+
+    //创建新的节点
+    var newP = document.createElement('p');//创建一个p标签
+    newP.id = "newP";
+    newP.innerText = "新标签";
+
+    list.append(newP);
+
+    //创建一个标签节点（通过setAttribute设置任何属性的值）
+    var newH2 = document.createElement('h2');
+    newH2.setAttribute('id', 'head2');
+    newH2.innerText = "新H2"
+
+    list.append(newH2);
+
+    var body = document.getElementsByTagName("body")[0];
+    body.setAttribute('style', 'background-color: cyan');
+
+</script>
+
+</html>

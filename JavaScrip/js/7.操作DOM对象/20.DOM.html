@@ -14,7 +14,7 @@
 		//获取节点
 		var h1 = document.getElementsByTagName('h1');
 		var p1 = document.getElementById('p1');
-		var p2 = document.getElementsByClassName('p2');
+		var p2 = document.getElementsByClassName('p2')[0];
 		
 		//获取子类
 		var father = document.getElementById('father');
@@ -23,7 +23,7 @@
 		var lastChild = father.lastElementChild;
 		
 		//更新节点
-		p2.innerText = '123';//修改文本的值
+		p2.innerText = "123";//修改文本的值
 		p1.innerHTML = '<strong>123</strong>';//可以解析html文本标签
 		p1.style.color = 'red';
 		p1.style.fontSize='100px';
@@ -43,7 +43,7 @@
 		}
 		*/
 		
-		father.removeChild(p1);
+		/*father.removeChild(p1);*/
 	</script>
 </body>
 </html>

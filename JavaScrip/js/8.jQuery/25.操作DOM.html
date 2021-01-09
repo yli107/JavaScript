@@ -9,13 +9,27 @@
 </head>
 
 <body>
-
+    <ul id="test-ul">
+        <li class='js'>JavaScript</li>
+        <li name='python'>Python</li>
+        <li class='c'>C programming</li>
+        <li class="cPlus">C++</li>
+    </ul>
 
 </body>
 <script>
-    //当网页元素加载完毕之后，响应事件
-    // $(document).ready(function () { })
+
     $(function () {
+        //节点文本操作
+        $('#test-ul li[name=python]').text('Java');
+
+        //css操作
+        $('#test-ul').css("background", "grey");
+
+        //元素的显示和隐藏
+        //$('.c').show();
+        $('.c').hide();
+
     })
 </script>
 

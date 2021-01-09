@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    鼠标位置：<span id="mouseMove"></span>
+
+    <div id="divMove" style="height : 700px; width: 500px; background:cyan">
+        在此区域移动鼠标
+    </div>
+
+</body>
+<script>
+    //当网页元素加载完毕之后，响应事件
+    // $(document).ready(function () { })
+    $(function () {
+        $('#divMove').mousemove(function (e) {
+            $('#mouseMove').text('x:' + e.pageX + 'y:' + e.pageY);
+        })
+
+        $('#divMove').mouseenter(function(e){
+            var d = document.getElementById('divMove');
+            d.setAttribute('style','height : 700px; width: 500px; background:pink');
+        })
+
+        $('#divMove').mouseleave(function(e){
+            var d = document.getElementById('divMove');
+            d.setAttribute('style','height : 700px; width: 500px; background:cyan');
+        })
+    })
+</script>
+
+
+</html>

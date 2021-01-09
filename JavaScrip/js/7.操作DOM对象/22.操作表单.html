@@ -4,13 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>操作表单</title>
+    <!-- MD5工具类-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.16.0/js/md5.js"></script>
 </head>
 
 <body>
-    <form action="getForm.html" method="post">
+    <!--
+        form 
+            onsubmit 提交时使用一个function 如果return false则提交失败
+    -->
+    <form action="#" method="post" onsubmit="return sub()">
         <p>
             <span>用户名：</span>
-            <input id="input_username" type="text" name="username" value="输入用户名" maxlength=30 required>
+            <input id="input_username" type="text" name="username" placeholder="输入用户名" maxlength=30 required>
+        </p>
+        <p>
+            <span>密码：</span>
+            <input id="input_psw" type="password" name="psw" placeholder="输入密码" maxlength=30 required>
         </p>
         <p>
             <span>性别：</span><input id="radio_male" type="radio" name="sex" value="male">男
@@ -29,6 +39,12 @@
     console.log(username.value);
     console.log(radio_male.checked);
     console.log(radio_female.checked);
+
+    function sub() {
+        var pwd = document.getElementById('input_psw');
+        pwd.value = md5(pwd.value);
+        return false;
+    }
 
     function info() {
         if (radio_male.checked)

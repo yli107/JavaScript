@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>咨客系统</title>
+    <style>
+        body {
+            height: 1040px;
+            width: 1880px;
+            background-color: rgb(48, 94, 246);
+            z-index: 0;
+            margin: 20px;
+            position: absolute;
+        }
+
+        #sidebar {
+            float: left;
+            width: 128px;
+            padding: 20px;
+        }
+
+        #img_LOGO {
+            position: relative;
+            left: 5px;
+        }
+
+        #page {
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            z-index: 1;
+            height: 1040px;
+            width: 1700px;
+            float: right;
+        }
+
+        #buttons dd {
+            background-color: white;
+            margin: 20px;
+            padding: 10px;
+            height: 37px;
+            width: 99px;
+            border-radius: 13px;
+            position: relative;
+            right:24px;
+            text-align: center;
+            line-height: 36px;
+        }
+
+        #buttons dd:hover {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="back">
+        <div id="sidebar">
+            <div id="title">
+                <img id="img_LOGO" src="../resource/image/htlLOGO.png" alt="LOGO" />
+                <br>胡桃里咨客系统</br>
+            </div>
+            <dl id="buttons">
+                <dd>点餐</dd>
+                <dd>外卖</dd>
+                <dd>收银</dd>
+                <dd>零售</dd>
+                <dd>会员</dd>
+                <dd>消息</dd>
+                <dd>打印机</dd>
+                <dd>刷新</dd>
+                <dd>锁屏</dd>
+                <dd>退出</dd>
+                <dd>更多</dd>
+            </dl>
+        </div>
+        <div id="page">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
